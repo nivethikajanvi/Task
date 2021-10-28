@@ -1,0 +1,21 @@
+● BCGTask
+|
++---● insurance_data (app folder)
+|   |
+|   +--● migrations (includes files related to migrations)
+|   |  
+|   +--● templates
+|   |  |--● insurance_data
+|   |  |  |--base.html
+|   |  |  |--policy_info.html
+|   |  |  |--policy_form.html
+|   | 
+|   |-- models.py
+|   |-- forms.py
+|   |-- urls.py
+|   |-- views.py
+|
++---● BCGTask (project folder)
+|   |
+|   |--settings.py 
+|   |--urls.py

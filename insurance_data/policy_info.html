@@ -1,0 +1,36 @@
+{% extends "insurance_data/base.html" %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<head>
+    <title>Details</title>
+</head>
+<body>
+    <h1>Page to Choose ID </h1>
+    <hr/>
+    <select name ="ID">
+        <option disabled= "true" selected>----Choose one of the options---</option>
+        <option>Policy Id</option>
+        <option>Customer Id</option> 
+    </select>
+    <input type = "submit" value = "Submit">
+</body>
+
+{% for policy in policy_info %}
+    {{Insurance.premium}}
+    {{Insurance.bodily_injury_liability}}
+    {{Insurance.personal_injury_protection}}
+    {{Insurance.property_damage_liability}}
+    {{Insurance.collision}}
+    {{Insurance.comprehensive}}
+    {{Insurance.customer_gender}}
+    {{Insurance.customer_income_group}}
+    {{Insurance.customer_region}}
+    {{Insurance.customer_marital_status}}
+    
+    
+{% endfor %}
+
+{% endblock content %}

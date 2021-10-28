@@ -1,0 +1,23 @@
+{% extends "insurance_data/base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.premium|as_crispy_field}}
+    {{form.bodily_injury_liability|as_crispy_field}}
+    {{form.personal_injury_protection|as_crispy_field}}
+    {{form.property_damage_liability|as_crispy_field}}
+    {{form.collision|as_crispy_field}}
+    {{form.comprehensive|as_crispy_field}}
+    {{form.customer_gender|as_crispy_field}}
+    {{form.customer_income_group|as_crispy_field}}
+    {{form.customer_region|as_crispy_field}}
+    {{form.customer_marital_status|as_crispy_field}}
+
+    <button type = "submit" class="btn btn-success"><i class = "fas fa-database"></i>Submit</button>
+
+
+</form>
+{% endblock content %}
